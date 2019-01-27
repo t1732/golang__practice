@@ -1,4 +1,4 @@
-package main
+package basic
 
 import (
 	"fmt"
@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-func main() {
-	resp, err := http.Get("http://google.jp/")
+func Crawl() {
+	resp, err := http.Get("https://api.ipify.org?format=json")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -15,10 +15,10 @@ func main() {
 
 	defer resp.Body.Close()
 
-	display(resp)
+	Xprint(resp)
 }
 
-func display(resp *http.Response) {
+func Xprint(resp *http.Response) {
 	b, err := ioutil.ReadAll(resp.Body)
 	if err == nil {
 		fmt.Println(string(b))
