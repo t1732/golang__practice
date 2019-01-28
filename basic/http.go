@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func Crawl() {
+func HttpRequest() {
 	resp, err := http.Get("https://api.ipify.org?format=json")
 	if err != nil {
 		fmt.Println(err)
