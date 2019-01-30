@@ -1,5 +1,5 @@
 # GO Practice
 
 ```
-$ go run main.go
+$ make run
 ```
