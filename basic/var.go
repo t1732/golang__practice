@@ -2,7 +2,7 @@ package basic
 
 import "fmt"
 
-func VarSample() {
+func Var() {
 	// 宣言した後、値を代入パターン
 	var msg string
 	msg = "宣言してから代入"

@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
-	basic.VarSample()
+	basic.Var()
+	basic.Map()
+	basic.Struct()
+	basic.SplatOperator()
 
 	t, err := basic.TimeParse("2020-04-01")
 	if err == nil {

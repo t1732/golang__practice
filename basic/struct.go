@@ -21,7 +21,7 @@ type Cat struct {
 	Color int
 }
 
-func StructSample() {
+func Struct() {
 	cat := Cat{}
 	cat.Name = "Shiro"
 	cat.Age = 5
